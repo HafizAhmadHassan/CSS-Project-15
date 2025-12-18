@@ -10,26 +10,36 @@ html, body {
     --black-color: #000000;
     --white-color: #ffffff;
     --off-white-color: #f8f8ff;
+    --light-blue-color: #87ceeb;
     --flag-hw: 200px;
 }
 
 
-.flag-japan{
+.flag-sweden{
 
     height: var(--flag-hw);
     width: var(--flag-hw);
-    background: var(--white-color);
+    background: var(--light-blue-color);
 
     margin : 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
 
-.circle {
-    border-radius: 50%;
-    height : calc(var(--flag-hw) * 6/16);
-    width  : calc(var(--flag-hw) * 6/16);
-    background: var(--red-color);
+.line2 {
+    height : calc(var(--flag-hw) );
+    width  : calc(var(--flag-hw) * 4/16);
+    background: var(--yellow-color);
+    position: absolute;
+    margin-right: 40px;
+}
+
+.line1 {
+    height : calc(var(--flag-hw) * 4/16);
+    width  : calc(var(--flag-hw) );
+
+    background: var(--yellow-color);
 }
