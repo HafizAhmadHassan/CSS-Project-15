@@ -1,17 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--black-color);
+}
 :root  {
     --red-color: #ff0000;
     --yellow-color: #ffff00;
     --black-color: #000000;
     --white-color: #ffffff;
+    --off-white-color: #f8f8ff;
     --flag-hw: 200px;
 }
 
 
-.flag-swiss{
+.flag-japan{
 
     height: var(--flag-hw);
     width: var(--flag-hw);
-    background: var(--red-color);
+    background: var(--white-color);
+
     margin : 30px auto;
     display: flex;
     justify-content: center;
@@ -19,15 +27,9 @@
     
 }
 
-.cross1 {
-    height : calc(var(--flag-hw) * 3/16);
-    width  : calc(var(--flag-hw) * 5/8);
-    background: var(--white-color);
-}
-
-.cross2 {
-    height : calc(var(--flag-hw) * 5/8);
-    width  : calc(var(--flag-hw) * 3/16);
-    background: var(--white-color);
-    position: absolute;
+.circle {
+    border-radius: 50%;
+    height : calc(var(--flag-hw) * 6/16);
+    width  : calc(var(--flag-hw) * 6/16);
+    background: var(--red-color);
 }
